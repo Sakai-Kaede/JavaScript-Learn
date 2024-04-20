@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>script要素の説明</title>
+  </head>
+  <body>
+    <span>---script要素の説明---</span>
+ 
+    <div id="box1">ターゲット-1</div>
+ 
+    <script>
+      // すでに読み込まれたbox1を操作しようとするので動作する。
+      let box1 = document.getElementById("box1");
+      box1.innerHTML = "書き換えました！";
+ 
+      // まだ読み込まれていないbox2を操作しようとするので動作する
+      let box2 = document.getElementById("box2");
+      box2.innerHTML = "書き換えました！";
+    </script>
+ 
+    <div id="box2">ターゲット-2</div>
+ 
+    <span>---script要素の説明---</span>
+  </body>
+</html>
